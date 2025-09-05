@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure--m-4=ap=c=ufb@#*0o5_tng2zj90iuq5!sx$=h7t2re+3=hxwk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['admin.himalayafair.com']
 
 
 # Application definition
@@ -80,12 +80,12 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'trek_data',
-        'USER': 'allan_psql',
-        'PASSWORD': '123456',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'himala18_trek_data',
+        'USER': 'himala18_allan',
+        'PASSWORD': '!ToTheMoon25',
         'HOST': 'localhost',
-        'PORT': '5432',
+        'PORT': '3306',
     }
 }
 
@@ -136,7 +136,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # CORS settings
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:5173',
+    'https://www.himalayafair.com',
 ]
 
 REST_FRAMEWORK = {
