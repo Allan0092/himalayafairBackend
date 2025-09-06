@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure--m-4=ap=c=ufb@#*0o5_tng2zj90iuq5!sx$=h7t2re+3=hxwk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['admin.himalayafair.com']
 
@@ -157,7 +157,7 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'stepelegance@zohomail.com'  
 EMAIL_HOST_PASSWORD = 'sendOTP2023!'  
-DEFAULT_FROM_EMAIL = 'Himalaya Adventure <stepelegance@zohomail.com>'
+DEFAULT_FROM_EMAIL = 'Himalaya Fair<stepelegance@zohomail.com>'
 
 # Frontend URL for email verification links
-FRONTEND_URL = 'http://localhost:5173'
+FRONTEND_URL = 'https://www.himalayafair.com'
